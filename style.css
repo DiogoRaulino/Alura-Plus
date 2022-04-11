@@ -1,0 +1,182 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --cor-hoover: #EC2F46;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--cor-de-fundo);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--branco-principal);
+}
+
+/* PRIMEIRA SECTION ================ */
+
+.primeiro {
+    background-image: url("images/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container-titulo {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.container-botao-azul {
+
+    display: block;
+    background: var(--botao-azul);
+    border-radius: 4px;
+    padding: 15px 100px;
+    text-decoration: none;
+    margin-top: 1em;
+    color: var(--branco-principal);
+}
+
+.container-botao-azul:hover {
+    background: var(--cor-hoover);
+    transition: 0.3s;
+}
+
+.container-botao-transparente {
+    background: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container-botao-aviso {
+    font-size: 12px;
+    margin-top: 1em;
+}
+
+.container-imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container-box {
+    margin: 0 6em;
+}
+
+/* FIM DA PRIMEIRA SECTION =============== */
+
+
+/* SEGUNDA SECTION ======================= */
+
+.secundario-imagem {
+    width: 80%;
+}
+
+.segundo {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao-titulo {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.descricao-texto {
+    font-size: 16px;
+    color: var(--cinza-secundario);
+}
+
+/* TERCEIRA SECTION ================ */
+
+.terceiro {
+    align-items: center;
+}
+
+.container-combo {
+    margin: 0 12em;
+}
+
+.combo-descricao {
+    color: var(--cinza-secundario);
+    font-size: 16px;
+
+}
+
+.botao-azul-secundario {
+    display: inline-block;
+    padding: 15px 30px;
+
+}
+
+.terceiro-imagem {
+    margin: 0 10em;
+}
+
+/* QUARTA SECTION ============= */
+
+.quarto {
+    align-items: center;
+    margin: 0 12em;
+}
+
+/* QUINTA SECTION  =============*/
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos-lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 2em;
+}
+
+.lista-item {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.logo {
+    margin: 12em 0 2em 0;
+}
+
+.rodape-lista {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.lista-link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.lista-link a:hover {
+    color: var(--cor-hoover);
+    transition: 0.3s;
+}
+
+.copyright {
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    text-align: center;
+    margin: 2.5em 0 7em;
+}
